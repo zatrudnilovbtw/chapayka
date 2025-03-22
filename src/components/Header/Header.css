@@ -1,0 +1,38 @@
+.doom-header {
+  background: linear-gradient(to right, #2A2A2A, #1A1A1A);
+  border-bottom: 4px solid #FF0000;
+  position: sticky;
+  top: 0;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.header-logo {
+  font-family: 'DoomFont', monospace;
+  color: #FF0000;
+  font-size: 48px;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+nav button {
+  background: transparent;
+  border: 2px solid #FFFF00;
+  color: #FFFF00;
+  font-family: "Press Start 2P", monospace;
+  padding: 8px 15px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav button:hover {
+  background: #FFFF00;
+  color: #000;
+  box-shadow: 0 0 10px #FFFF00;
+  border-color: #FF4500;
+}

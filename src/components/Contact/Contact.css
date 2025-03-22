@@ -1,0 +1,33 @@
+.contacts {
+  padding: 40px 20px;
+  text-align: center;
+  color: #FFFF00;
+  font-family: "Press Start 2P", monospace;
+  border-top: 4px solid #FF0000;
+  background: transparent;
+}
+
+.contacts h2 {
+  font-size: 30px;
+  color: #FF0000;
+  text-shadow: 0 0 6px #FF0000;
+  margin-bottom: 30px;
+}
+
+.contacts p {
+  font-size: 20px;
+  margin: 15px 0;
+  text-shadow: 0 0 3px #FFFF00;
+}
+
+.contacts a {
+  color: #FFFF00;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.contacts a:hover {
+  color: #FF4500;
+  text-shadow: 0 0 6px #FF4500;
+}

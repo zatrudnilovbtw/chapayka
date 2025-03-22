@@ -1,0 +1,82 @@
+.portfolio {
+  padding: 40px 20px;
+  background: transparent;
+}
+
+.portfolio h2 {
+  font-family: "Press Start 2P", monospace;
+  color: #FF0000;
+  text-shadow: 0 0 6px #FF0000;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subheading {
+  font-family: "Press Start 2P", monospace;
+  color: #FFFF00;
+  text-shadow: 0 0 3px #FFFF00;
+  font-size: 24px;
+  text-align: center;
+  margin: 50px 0 30px;
+}
+
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.video-card {
+  width: 320px;
+  text-align: center;
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+  border: 3px solid #FF0000;
+  box-shadow: 0 0 12px #FF0000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #FF4500;
+}
+
+.video-card a {
+  display: block;
+  margin-top: 15px;
+  font-family: "Press Start 2P", monospace;
+  color: #FFFF00;
+  text-shadow: 0 0 3px #FFFF00;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.video-card a:hover {
+  color: #FF4500;
+  text-shadow: 0 0 6px #FF4500;
+}
+
+.tools-list {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.tools-list p {
+  margin: 15px 0;
+  font-family: "Press Start 2P", monospace;
+  color: #FFFF00;
+  text-shadow: 0 0 3px #FFFF00;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.tools-list p:hover {
+  color: #FF4500;
+  text-shadow: 0 0 6px #FF4500;
+}
