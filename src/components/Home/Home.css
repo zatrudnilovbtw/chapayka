@@ -26,7 +26,7 @@
 }
 
 .avatar {
-  width: 300px;
+  width: 320px;
   height: auto;
   border: 4px solid #FF0000;
   box-shadow: 0 0 15px #FF0000, inset 0 0 5px #FF4500;
@@ -34,17 +34,56 @@
 }
 
 .avatar:hover {
-  transform: scale(1);
+  transform: scale(1.05);
 }
 
 h1 {
   font-family: "Press Start 2P", monospace;
   color: #FF0000;
   text-shadow: 0 0 5px #FF0000;
-  font-size: 35px;
+  font-size: 34px;
   text-align: center;
   margin-bottom: 40px;
 }
 .chapa{
-  font-size: 30px;
+  font-size: 36px;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .avatar {
+    width: 60%;
+    max-width: 300px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .statss p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 20px 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .avatar {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .statss p {
+    font-size: 14px;
+  }
 }

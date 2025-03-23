@@ -8,7 +8,7 @@
 }
 
 .contacts h2 {
-  font-size: 30px;
+  font-size: 32px;
   color: #FF0000;
   text-shadow: 0 0 6px #FF0000;
   margin-bottom: 30px;
@@ -30,4 +30,34 @@
 .contacts a:hover {
   color: #FF4500;
   text-shadow: 0 0 6px #FF4500;
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding: 30px 15px;
+  }
+
+  .contacts h2 {
+    font-size: 26px;
+  }
+
+  .contacts p,
+  .contacts a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contacts {
+    padding: 20px 10px;
+  }
+
+  .contacts h2 {
+    font-size: 22px;
+  }
+
+  .contacts p,
+  .contacts a {
+    font-size: 14px;
+  }
 }

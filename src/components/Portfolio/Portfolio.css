@@ -7,7 +7,7 @@
   font-family: "Press Start 2P", monospace;
   color: #FF0000;
   text-shadow: 0 0 6px #FF0000;
-  font-size: 30px;
+  font-size: 32px;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -79,4 +79,56 @@
 .tools-list p:hover {
   color: #FF4500;
   text-shadow: 0 0 6px #FF4500;
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 30px 15px;
+  }
+
+  .portfolio h2 {
+    font-size: 26px;
+  }
+
+  .subheading {
+    font-size: 20px;
+  }
+
+  .video-card {
+    width: 45%;
+  }
+
+  .video-card a {
+    font-size: 16px;
+  }
+
+  .tools-list p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio {
+    padding: 20px 10px;
+  }
+
+  .portfolio h2 {
+    font-size: 22px;
+  }
+
+  .subheading {
+    font-size: 18px;
+  }
+
+  .video-card {
+    width: 100%;
+  }
+
+  .video-card a {
+    font-size: 14px;
+  }
+
+  .tools-list p {
+    font-size: 14px;
+  }
 }

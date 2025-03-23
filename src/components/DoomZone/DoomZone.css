@@ -9,10 +9,16 @@
 
 .doom-zone-wrapper.doom-zone h2 {
   color: #FF0000;
-  font-size: 30px;
-  margin-bottom: 40px;
+  font-size: 40px;
+  margin-bottom: 30px;
   font-family: "Press Start 2P", monospace;
   text-shadow: 0 0 8px #FF0000;
+}
+
+.doom-controls {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .doom-game-container {
@@ -21,12 +27,16 @@
   border: 4px solid #FF0000;
   box-shadow: 0 0 25px #FF0000, inset 0 0 10px #FF4500;
   position: relative;
-  background: #000; /* Для игры нужен чёрный фон внутри */
+  background: #000;
 }
 
 .game-canvas {
   width: 100%;
   height: 100%;
+}
+
+.game-canvas.placeholder {
+  background: url("/images/doom_placeholder.jpg") no-repeat center/cover;
 }
 
 .doom-loading {
@@ -50,6 +60,7 @@
 }
 
 .start-button,
+.stop-button,
 .fullscreen-button {
   padding: 12px 25px;
   background: #FF0000;
@@ -62,19 +73,73 @@
   box-shadow: 0 0 10px #FF0000;
 }
 
-.start-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.fullscreen-button {
-  margin-top: 30px;
-}
-
 .start-button:hover,
+.stop-button:hover,
 .fullscreen-button:hover {
   background: #FF4500;
   box-shadow: 0 0 15px #FF4500;
+}
+
+.fullscreen-button {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .doom-zone-wrapper.doom-zone {
+    padding: 30px 15px;
+  }
+
+  .doom-zone-wrapper.doom-zone h2 {
+    font-size: 32px;
+  }
+
+  .doom-controls {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .doom-game-container {
+    width: 100%;
+    height: 50vh; /* Масштабируем высоту */
+    max-width: 600px;
+  }
+
+  .start-button,
+  .stop-button,
+  .fullscreen-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .doom-loading,
+  .doom-error {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .doom-zone-wrapper.doom-zone {
+    padding: 20px 10px;
+  }
+
+  .doom-zone-wrapper.doom-zone h2 {
+    font-size: 26px;
+  }
+
+  .doom-game-container {
+    height: 40vh;
+    max-width: 100%;
+  }
+
+  .start-button,
+  .stop-button,
+  .fullscreen-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .doom-loading,
+  .doom-error {
+    font-size: 16px;
+  }
 }

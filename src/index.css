@@ -20,3 +20,16 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+
+/* Медиа-запросы */
+@media (max-width: 768px) {
+  html, body {
+    font-size: 0.9rem; /* Уменьшаем шрифт для планшетов */
+  }
+}
+
+@media (max-width: 480px) {
+  html, body {
+    font-size: 0.8rem; /* Ещё меньше для телефонов */
+  }
+}
