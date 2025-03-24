@@ -4,7 +4,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <div className="home">
-      <h1 className="chapa">Chapayka 23 | Видео монтажер</h1>
+      <h1 className="chapa">Chapayka 23 | Видеомонтажер</h1>
       <div className="profile-container">
         <div className="statss">
           <p>Скорость монтажа: 90%</p>
