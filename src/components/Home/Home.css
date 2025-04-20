@@ -47,6 +47,8 @@ h1 {
 }
 .chapa{
   font-size: 36px;
+  line-height: 1.3;
+  word-break: break-word;
 }
 
 @media (max-width: 768px) {
@@ -63,6 +65,10 @@ h1 {
   h1 {
     font-size: 28px;
   }
+  
+  .chapa {
+    font-size: 30px;
+  }
 
   .statss p {
     font-size: 16px;
@@ -76,6 +82,10 @@ h1 {
 
   h1 {
     font-size: 22px;
+  }
+  
+  .chapa {
+    font-size: 24px;
   }
 
   .avatar {
