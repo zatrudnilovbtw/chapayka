@@ -60,9 +60,9 @@ const Portfolio = () => {
       <div className="video-gallery">
         {fullscreenVideos.map((video) => (
           <div key={video.id} className="video-card">
-            <img src={video.thumbnail} alt={video.title} />
             <a href={video.url} target="_blank" rel="noopener noreferrer">
-              {video.title}
+              <img src={video.thumbnail} alt={video.title} />
+              <span>{video.title}</span>
             </a>
           </div>
         ))}
@@ -72,9 +72,9 @@ const Portfolio = () => {
       <div className="video-gallery">
         {verticalVideos.map((video) => (
           <div key={video.id} className="video-card">
-            <img src={video.thumbnail} alt={video.title} />
             <a href={video.url} target="_blank" rel="noopener noreferrer">
-              {video.title}
+              <img src={video.thumbnail} alt={video.title} />
+              <span>{video.title}</span>
             </a>
           </div>
         ))}
